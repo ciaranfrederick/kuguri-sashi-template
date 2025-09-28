@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuguri-Sashi Designer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kuguri-Sashi Pattern Designer</h1>
+  </header>
+
+  <section id="controls">
+    <label>
+      Canvas Size (mm)
+      <input type="number" id="canvasSize" value="140" step="10">
+    </label>
+    <label>
+      Grid Spacing (mm)
+      <input type="number" id="gridSpacing" value="7" step="1">
+    </label>
+    <label>
+      Dot Radius (mm)
+      <input type="number" id="dotRadius" value="0.7" step="0.1">
+    </label>
+    <label>
+      Pattern
+      <select id="patternSelect"></select>
+    </label>
+    <button id="downloadSVG">Download SVG</button>
+  </section>
+
+  <section id="canvasContainer">
+    <canvas id="patternCanvas" width="800" height="800"></canvas>
+  </section>
+
+  <script src="patterns.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
